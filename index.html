@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="title">Survey Form</h1>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
             <p id="description"> Thank you for taking the time to help us improve the platform</p>
         </header>
    
     <form id="survey-form">
         <div class="form-group">
-        <label id="name-label" for="name" >Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your Name" required/>
+          <label id="name-label" for="name" >Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your Name" required/>
         </div>
 
         <div class="form-group">
@@ -25,13 +26,37 @@
         </div>
 
         <div class="form-group">
-            <label id="number-label" for="number"></label>
+            <label id="number-label" for="number">Age</label>
             <input type="number" name="number" id="number" min="10" max="99" placeholder="number" required/>
-
-            <select name="" id="" disabled="disabled"></select>
-
+        </div>
+        
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="" id="dropdown" value="student">
+                <option value="student">Student</option>
+                <option value="Full-time job">Full-time job</option>
+            </select>
         </div>
 
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="checkbox-container">
+                <input type="checkbox" id="" value="Definitely"/>
+                <label>Definitely</label>
+            </div>
+            <div>
+                <input type="checkbox" id="" value="Maybe"/>
+                <label>Maybe</label>
+            </div>
+            <div>
+                <input type="checkbox" id="" value="Not sure"/>
+                <label>Not sure</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <textarea></textarea>
+        </div>
 
     </form>
 
